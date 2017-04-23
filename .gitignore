@@ -1,0 +1,7 @@
+solution/.vs/
+install/Win32/
+install/x64/
+solution/DemoGame/Win32/
+solution/DemoGame/x64/
+solution/SFMLEngine/Win32/
+solution/SFMLEngine/x64/
