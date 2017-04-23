@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\states">
+      <UniqueIdentifier>{dab6fa76-5f78-4169-a93a-a11e8ca9d9f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\states">
+      <UniqueIdentifier>{dffa517c-47cc-47bf-a330-f3fa26106d55}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,10 +27,55 @@
     <ClCompile Include="src\application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\states\game_state.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\loading_state.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\loading_task.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\menu_state.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\pause_state.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\settings_state.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\title_state.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\application.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\state_identifiers.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\game_state.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\loading_state.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\loading_task.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\menu_state.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\pause_state.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\settings_state.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\states\title_state.h">
+      <Filter>Header Files\states</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

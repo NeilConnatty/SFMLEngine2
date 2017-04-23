@@ -48,31 +48,10 @@
     <ClCompile Include="src\utility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\states\game_state.cpp">
-      <Filter>Source Files\states</Filter>
-    </ClCompile>
-    <ClCompile Include="src\states\loading_state.cpp">
-      <Filter>Source Files\states</Filter>
-    </ClCompile>
-    <ClCompile Include="src\states\loading_task.cpp">
-      <Filter>Source Files\states</Filter>
-    </ClCompile>
-    <ClCompile Include="src\states\menu_state.cpp">
-      <Filter>Source Files\states</Filter>
-    </ClCompile>
-    <ClCompile Include="src\states\pause_state.cpp">
-      <Filter>Source Files\states</Filter>
-    </ClCompile>
-    <ClCompile Include="src\states\settings_state.cpp">
-      <Filter>Source Files\states</Filter>
-    </ClCompile>
     <ClCompile Include="src\states\state.cpp">
       <Filter>Source Files\states</Filter>
     </ClCompile>
     <ClCompile Include="src\states\state_stack.cpp">
-      <Filter>Source Files\states</Filter>
-    </ClCompile>
-    <ClCompile Include="src\states\title_state.cpp">
       <Filter>Source Files\states</Filter>
     </ClCompile>
     <ClCompile Include="src\scene\aircraft.cpp">
@@ -140,34 +119,10 @@
     <ClInclude Include="headers\engine\resources\textures.h">
       <Filter>Header Files\resources</Filter>
     </ClInclude>
-    <ClInclude Include="headers\engine\states\game_state.h">
-      <Filter>Header Files\states</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\engine\states\loading_state.h">
-      <Filter>Header Files\states</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\engine\states\loading_task.h">
-      <Filter>Header Files\states</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\engine\states\menu_state.h">
-      <Filter>Header Files\states</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\engine\states\pause_state.h">
-      <Filter>Header Files\states</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\engine\states\settings_state.h">
-      <Filter>Header Files\states</Filter>
-    </ClInclude>
     <ClInclude Include="headers\engine\states\state.h">
       <Filter>Header Files\states</Filter>
     </ClInclude>
-    <ClInclude Include="headers\engine\states\state_identifiers.h">
-      <Filter>Header Files\states</Filter>
-    </ClInclude>
     <ClInclude Include="headers\engine\states\state_stack.h">
-      <Filter>Header Files\states</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\engine\states\title_state.h">
       <Filter>Header Files\states</Filter>
     </ClInclude>
     <ClInclude Include="headers\engine\scene\aircraft.h">

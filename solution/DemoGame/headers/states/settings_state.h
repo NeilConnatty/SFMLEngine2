@@ -11,7 +11,7 @@
 #include <gui/button.h>
 #include <gui/label.h>
 #include <player.h>
-#include "state.h"
+#include "states/state.h"
 
 class settings_state : public state
 {

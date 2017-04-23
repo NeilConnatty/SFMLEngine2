@@ -3,6 +3,7 @@
 //
 
 #include "states/title_state.h"
+#include "states/state_identifiers.h"
 #include "utility.h"
 
 title_state::title_state (state_stack &stack, state::context cntxt)  :
@@ -32,7 +33,7 @@ bool title_state::handle_event (const sf::Event &event)
     if (event.type == sf::Event::KeyPressed)
     {
         request_stack_pop();
-        request_stack_push(states::MENU);
+        request_stack_push(states::menu_id());
     }
 
     return true;

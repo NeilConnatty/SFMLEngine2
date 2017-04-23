@@ -2,12 +2,6 @@
 // Created by Neil Connatty on 2016-11-27.
 //
 
-#include <states/title_state.h>
-#include <states/menu_state.h>
-#include <states/game_state.h>
-#include <states/pause_state.h>
-#include <states/loading_state.h>
-#include <states/settings_state.h>
 #include "engine.h"
 #include "states/state.h"
 #include "states/state_stack.h"

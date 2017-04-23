@@ -5,7 +5,7 @@
 #ifndef SFMLENGINE_GAME_STATE_H
 #define SFMLENGINE_GAME_STATE_H
 
-#include "state.h"
+#include "states/state.h"
 #include "scene/world.h"
 #include "player.h"
 

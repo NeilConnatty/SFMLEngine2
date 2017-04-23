@@ -3,6 +3,7 @@
 //
 
 #include "states/game_state.h"
+#include "states/state_identifiers.h"
 
 game_state::game_state (state_stack &stack, context cntxt) :
         state(stack, cntxt),
@@ -22,7 +23,7 @@ bool game_state::handle_event (const sf::Event &event)
     m_player.handle_event(event, commands);
 
     if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
-        request_stack_push(states::PAUSE);
+        request_stack_push(states::pause_id());
 
     return true;
 }

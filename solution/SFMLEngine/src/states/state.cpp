@@ -31,7 +31,7 @@ void state::request_stack_pop()
     m_stack->pop_state();
 }
 
-void state::request_stack_push(states::ID stateID)
+void state::request_stack_push(state_id& stateID)
 {
     m_stack->push_state(stateID);
 }

@@ -11,6 +11,7 @@
 #include "application.h"
 #include "states/state.h"
 #include "states/state_stack.h"
+#include "states/state_identifiers.h"
 
 application::application () :
         engine()
@@ -19,7 +20,7 @@ application::application () :
 	load_fonts();
 
 	register_states();
-	m_stack.push_state(states::TITLE);
+	m_stack.push_state(states::title_id());
 }
 
 void application::run()
@@ -29,12 +30,12 @@ void application::run()
 
 void application::register_states ()
 {
-    m_stack.register_state<title_state>(states::TITLE);
-    m_stack.register_state<menu_state>(states::MENU);
-    m_stack.register_state<game_state>(states::GAME);
-    m_stack.register_state<pause_state>(states::PAUSE);
-    m_stack.register_state<loading_state>(states::LOADING);
-    m_stack.register_state<settings_state>(states::SETTINGS);
+    m_stack.register_state<title_state>(states::title_id());
+    m_stack.register_state<menu_state>(states::menu_id());
+    m_stack.register_state<game_state>(states::game_id());
+    m_stack.register_state<pause_state>(states::pause_id());
+    m_stack.register_state<loading_state>(states::loading_id());
+    m_stack.register_state<settings_state>(states::settings_id());
 }
 
 void application::load_textures ()

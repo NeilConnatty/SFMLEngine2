@@ -8,7 +8,6 @@
 #include <SFML/System/Time.hpp>
 #include <SFML/Window/Event.hpp>
 
-#include "state_identifiers.h"
 #include "resources/textures.h"
 #include "resources/fonts.h"
 
@@ -21,6 +20,13 @@ namespace sf
 
 class state_stack;
 class player;
+
+struct state_id
+{
+	using ID = int;
+
+	virtual ID getID() = 0;
+};
 
 class state
 {
@@ -47,7 +53,7 @@ public:
     virtual bool    handle_event (const sf::Event& event) = 0;
 
 protected:
-    void            request_stack_push (states::ID stateID);
+    void            request_stack_push (state_id& stateID);
     void            request_stack_pop ();
     void            request_state_clear ();
 

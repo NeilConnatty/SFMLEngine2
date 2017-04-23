@@ -3,6 +3,7 @@
 //
 
 #include "states/loading_state.h"
+#include "states/state_identifiers.h"
 #include "utility.h"
 
 loading_state::loading_state(state_stack &stack, context cntxt) :
@@ -51,8 +52,8 @@ void loading_state::draw ()
 bool loading_state::update (sf::Time dt)
 {
     if (m_loadingTask.is_finished()) {
-        request_stack_pop();
-        request_stack_push(states::GAME);
+		request_stack_pop();
+		request_stack_push(states::game_id());
     } else {
         set_completion(m_loadingTask.get_completion());
     }

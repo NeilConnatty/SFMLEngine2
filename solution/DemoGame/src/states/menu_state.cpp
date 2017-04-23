@@ -4,6 +4,7 @@
 
 #include <gui/button.h>
 #include "states/menu_state.h"
+#include "states/state_identifiers.h"
 #include "utility.h"
 
 menu_state::menu_state (state_stack &stack, state::context cntxt) :
@@ -21,7 +22,7 @@ menu_state::menu_state (state_stack &stack, state::context cntxt) :
     playButton->set_text("Play");
     playButton->set_callback([this]() {
         request_stack_pop();
-        request_stack_push(states::GAME);
+        request_stack_push(states::game_id());
     });
     m_guiContainer.pack(playButton);
 
@@ -29,7 +30,7 @@ menu_state::menu_state (state_stack &stack, state::context cntxt) :
     settingsButton->setPosition(100, 250);
     settingsButton->set_text("Settings");
     settingsButton->set_callback([this]() {
-        request_stack_push(states::SETTINGS);
+        request_stack_push(states::settings_id());
     });
     m_guiContainer.pack(settingsButton);
 

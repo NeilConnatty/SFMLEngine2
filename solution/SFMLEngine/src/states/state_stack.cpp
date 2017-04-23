@@ -13,7 +13,7 @@ state_stack::state_stack (state::context cntxt) :
 {
 }
 
-state::ptr state_stack::create_state (states::ID stateID)
+state::ptr state_stack::create_state (state_id::ID stateID)
 {
     auto found = m_factories.find(stateID);
     assert(found != m_factories.end());
@@ -55,9 +55,9 @@ void state_stack::update (sf::Time dt)
         apply_pending_changes();
 }
 
-void state_stack::push_state(states::ID stateID)
+void state_stack::push_state(state_id& stateID)
 {
-    m_pendingList.push_back(pending_change(PUSH, stateID));
+    m_pendingList.push_back(pending_change(PUSH, stateID.getID()));
 }
 
 void state_stack::pop_state ()
@@ -94,7 +94,7 @@ void state_stack::apply_pending_changes ()
 }
 
 
-state_stack::pending_change::pending_change (action act, states::ID stateID) :
+state_stack::pending_change::pending_change (action act, state_id::ID stateID) :
         act(act),
         stateID(stateID)
 {

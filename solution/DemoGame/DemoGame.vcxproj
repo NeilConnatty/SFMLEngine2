@@ -21,6 +21,13 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\application.cpp" />
+    <ClCompile Include="src\states\game_state.cpp" />
+    <ClCompile Include="src\states\loading_state.cpp" />
+    <ClCompile Include="src\states\loading_task.cpp" />
+    <ClCompile Include="src\states\menu_state.cpp" />
+    <ClCompile Include="src\states\pause_state.cpp" />
+    <ClCompile Include="src\states\settings_state.cpp" />
+    <ClCompile Include="src\states\title_state.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SFMLEngine\SFMLEngine.vcxproj">
@@ -29,6 +36,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\application.h" />
+    <ClInclude Include="headers\states\game_state.h" />
+    <ClInclude Include="headers\states\loading_state.h" />
+    <ClInclude Include="headers\states\loading_task.h" />
+    <ClInclude Include="headers\states\menu_state.h" />
+    <ClInclude Include="headers\states\pause_state.h" />
+    <ClInclude Include="headers\states\settings_state.h" />
+    <ClInclude Include="headers\states\state_identifiers.h" />
+    <ClInclude Include="headers\states\title_state.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -161,15 +161,8 @@
     <ClCompile Include="src\scene\scene_node.cpp" />
     <ClCompile Include="src\scene\sprite_node.cpp" />
     <ClCompile Include="src\scene\world.cpp" />
-    <ClCompile Include="src\states\game_state.cpp" />
-    <ClCompile Include="src\states\loading_state.cpp" />
-    <ClCompile Include="src\states\loading_task.cpp" />
-    <ClCompile Include="src\states\menu_state.cpp" />
-    <ClCompile Include="src\states\pause_state.cpp" />
-    <ClCompile Include="src\states\settings_state.cpp" />
     <ClCompile Include="src\states\state.cpp" />
     <ClCompile Include="src\states\state_stack.cpp" />
-    <ClCompile Include="src\states\title_state.cpp" />
     <ClCompile Include="src\utility.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -191,16 +184,8 @@
     <ClInclude Include="headers\engine\scene\scene_node.h" />
     <ClInclude Include="headers\engine\scene\sprite_node.h" />
     <ClInclude Include="headers\engine\scene\world.h" />
-    <ClInclude Include="headers\engine\states\game_state.h" />
-    <ClInclude Include="headers\engine\states\loading_state.h" />
-    <ClInclude Include="headers\engine\states\loading_task.h" />
-    <ClInclude Include="headers\engine\states\menu_state.h" />
-    <ClInclude Include="headers\engine\states\pause_state.h" />
-    <ClInclude Include="headers\engine\states\settings_state.h" />
     <ClInclude Include="headers\engine\states\state.h" />
-    <ClInclude Include="headers\engine\states\state_identifiers.h" />
     <ClInclude Include="headers\engine\states\state_stack.h" />
-    <ClInclude Include="headers\engine\states\title_state.h" />
     <ClInclude Include="headers\engine\utility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

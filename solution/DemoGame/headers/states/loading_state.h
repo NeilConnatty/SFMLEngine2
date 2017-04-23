@@ -5,7 +5,7 @@
 #ifndef SFMLENGINE_LOADING_STATE_H
 #define SFMLENGINE_LOADING_STATE_H
 
-#include "state.h"
+#include "states/state.h"
 #include "loading_task.h"
 
 class loading_state : public state

@@ -5,7 +5,7 @@
 #ifndef SFMLENGINE_PAUSE_STATE_H
 #define SFMLENGINE_PAUSE_STATE_H
 
-#include "state.h"
+#include "states/state.h"
 #include "gui/container.h"
 
 class pause_state : public state

@@ -9,6 +9,7 @@
 #include <gui/button.h>
 #include <gui/label.h>
 #include "states/pause_state.h"
+#include "states/state_identifiers.h"
 
 pause_state::pause_state(state_stack &stack, context cntxt) :
         state(stack, cntxt),
@@ -31,7 +32,7 @@ pause_state::pause_state(state_stack &stack, context cntxt) :
     quitButton->set_text("Return to Menu");
     quitButton->set_callback([this] () {
         request_state_clear();
-        request_stack_push(states::MENU);
+        request_stack_push(states::menu_id());
     });
     m_guiContainer.pack(quitButton);
 }

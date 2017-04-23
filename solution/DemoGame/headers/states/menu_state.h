@@ -5,9 +5,9 @@
 #ifndef SFMLENGINE_MENU_STATE_H
 #define SFMLENGINE_MENU_STATE_H
 
-
 #include <vector>
-#include "state.h"
+
+#include "states/state.h"
 #include "gui/container.h"
 
 class menu_state : public state
