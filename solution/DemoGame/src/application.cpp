@@ -14,18 +14,13 @@
 #include "states/state_identifiers.h"
 
 application::application () :
-        engine()
+        engine(std::make_unique<player_impl>(), sf::seconds(1.f / 60.f))
 {
 	load_textures();
 	load_fonts();
 
 	register_states();
 	m_stack.push_state(states::title_id());
-}
-
-void application::run()
-{
-	engine::run();
 }
 
 void application::register_states ()

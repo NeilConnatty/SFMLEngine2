@@ -6,13 +6,13 @@
 #include "states/state.h"
 #include "states/state_stack.h"
 
-engine::engine() :
+engine::engine(std::unique_ptr<player> thePlayer, sf::Time timePerFrame) :
 	m_window(sf::VideoMode(640, 480), "SFML Application"),
-	m_player(),
+	m_stack(state::context(m_window, m_textures, m_fonts, *thePlayer)),
+	m_player(std::move(thePlayer)),
 	m_fonts(),
 	m_textures(),
-	m_stack(state::context(m_window, m_textures, m_fonts, m_player)),
-	TIME_PER_FRAME(sf::seconds(1.f / 60.f))
+	TIME_PER_FRAME(timePerFrame)
 {
 	m_window.setKeyRepeatEnabled(false);
 }

@@ -42,9 +42,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\utility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -54,9 +51,6 @@
     <ClCompile Include="src\states\state_stack.cpp">
       <Filter>Source Files\states</Filter>
     </ClCompile>
-    <ClCompile Include="src\scene\aircraft.cpp">
-      <Filter>Source Files\scene</Filter>
-    </ClCompile>
     <ClCompile Include="src\scene\entity.cpp">
       <Filter>Source Files\scene</Filter>
     </ClCompile>
@@ -64,9 +58,6 @@
       <Filter>Source Files\scene</Filter>
     </ClCompile>
     <ClCompile Include="src\scene\sprite_node.cpp">
-      <Filter>Source Files\scene</Filter>
-    </ClCompile>
-    <ClCompile Include="src\scene\world.cpp">
       <Filter>Source Files\scene</Filter>
     </ClCompile>
     <ClCompile Include="src\gui\button.cpp">
@@ -93,9 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\engine\commands\command.h">
-      <Filter>Header Files\commands</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\engine\commands\command_queue.h">
       <Filter>Header Files\commands</Filter>
     </ClInclude>
     <ClInclude Include="headers\engine\gui\button.h">
@@ -125,25 +113,16 @@
     <ClInclude Include="headers\engine\states\state_stack.h">
       <Filter>Header Files\states</Filter>
     </ClInclude>
-    <ClInclude Include="headers\engine\scene\aircraft.h">
-      <Filter>Header Files\scene</Filter>
-    </ClInclude>
     <ClInclude Include="headers\engine\scene\category.h">
       <Filter>Header Files\scene</Filter>
     </ClInclude>
     <ClInclude Include="headers\engine\scene\entity.h">
       <Filter>Header Files\scene</Filter>
     </ClInclude>
-    <ClInclude Include="headers\engine\scene\layers.h">
-      <Filter>Header Files\scene</Filter>
-    </ClInclude>
     <ClInclude Include="headers\engine\scene\scene_node.h">
       <Filter>Header Files\scene</Filter>
     </ClInclude>
     <ClInclude Include="headers\engine\scene\sprite_node.h">
-      <Filter>Header Files\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\engine\scene\world.h">
       <Filter>Header Files\scene</Filter>
     </ClInclude>
     <ClInclude Include="headers\engine\player.h">
@@ -154,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="headers\engine\engine.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\engine\commands\command_queue.h">
+      <Filter>Header Files\commands</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

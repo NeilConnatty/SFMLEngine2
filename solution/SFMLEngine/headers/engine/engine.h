@@ -14,7 +14,9 @@
 class engine
 {
 public:
-						engine();
+	// this takes possession on of the player passed in
+	engine(std::unique_ptr<player> thePlayer, sf::Time timePerFrame);
+
 	virtual void        run();
 
 private:
@@ -36,12 +38,12 @@ protected:
 	texture_holder      m_textures;
 
 private:
-	const sf::Time		TIME_PER_FRAME;
+	const sf::Time				TIME_PER_FRAME;
 
-	player              m_player;
-	sf::RenderWindow    m_window;
+	std::unique_ptr<player>		m_player;
+	sf::RenderWindow			m_window;
 	
-	bool                m_isPaused;
+	bool						m_isPaused;
 };
 
 

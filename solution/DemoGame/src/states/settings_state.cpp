@@ -13,10 +13,10 @@ settings_state::settings_state (state_stack &stack, context cntxt) :
     sf::Texture& texture = cntxt.textures->get(textures::TITLE_SCREEN);
     m_backgroundSprite.setTexture(texture);
 
-    add_button_label(player::MOVE_LEFT, 150.f, "Move Left", cntxt);
-    add_button_label(player::MOVE_RIGHT, 200.f, "Move Right", cntxt);
-    add_button_label(player::MOVE_UP, 250.f, "Move Up", cntxt);
-    add_button_label(player::MOVE_DOWN, 300.f, "Move Down", cntxt);
+    add_button_label(action::MOVE_LEFT, 150.f, "Move Left", cntxt);
+    add_button_label(action::MOVE_RIGHT, 200.f, "Move Right", cntxt);
+    add_button_label(action::MOVE_UP, 250.f, "Move Up", cntxt);
+    add_button_label(action::MOVE_DOWN, 300.f, "Move Down", cntxt);
 
     update_labels();
 
@@ -47,14 +47,14 @@ bool settings_state::update (sf::Time dt)
 bool settings_state::handle_event (const sf::Event &event)
 {
     bool isKeyBinding = false;
-    for (std::size_t action = 0; action < player::ACTION_COUNT; action++)
+    for (std::size_t action = 0; action < action::ACTION_COUNT; action++)
     {
         if (m_bindingButtons[action]->is_active())
         {
             isKeyBinding = true;
             if (event.type == sf::Event::KeyReleased)
             {
-                get_context().the_player->assign_key(static_cast<player::action>(action), event.key.code);
+                static_cast<player_impl*>(get_context().the_player)->assign_key(static_cast<action::ID>(action), event.key.code);
                 m_bindingButtons[action]->deactivate();
                 break;
             }
@@ -70,15 +70,15 @@ bool settings_state::handle_event (const sf::Event &event)
 
 void settings_state::update_labels ()
 {
-    player* the_player = get_context().the_player;
-    for (std::size_t action = 0; action < player::ACTION_COUNT; action++)
+	player_impl* the_player = static_cast<player_impl*>(get_context().the_player);
+    for (std::size_t action = 0; action < action::ACTION_COUNT; action++)
     {
-        sf::Keyboard::Key key = the_player->get_assigned_key(static_cast<player::action>(action));
+        sf::Keyboard::Key key = the_player->get_assigned_key(static_cast<action::ID>(action));
         m_bindingLabels[action]->set_text(utility::to_string(key));
     }
 }
 
-void settings_state::add_button_label(player::action act, float y, const std::string & text, context cntxt)
+void settings_state::add_button_label(action::ID act, float y, const std::string & text, context cntxt)
 {
     m_bindingButtons[act] = std::make_shared<gui::button>(*cntxt.fonts, *cntxt.textures);
     m_bindingButtons[act]->set_text(text);

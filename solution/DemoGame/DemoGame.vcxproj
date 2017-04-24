@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\application.cpp" />
+    <ClCompile Include="src\player_impl.cpp" />
+    <ClCompile Include="src\scene\aircraft.cpp" />
+    <ClCompile Include="src\scene\world.cpp" />
     <ClCompile Include="src\states\game_state.cpp" />
     <ClCompile Include="src\states\loading_state.cpp" />
     <ClCompile Include="src\states\loading_task.cpp" />
@@ -36,6 +39,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\application.h" />
+    <ClInclude Include="headers\commands\action.h" />
+    <ClInclude Include="headers\player_impl.h" />
+    <ClInclude Include="headers\scene\aircraft.h" />
+    <ClInclude Include="headers\scene\world.h" />
     <ClInclude Include="headers\states\game_state.h" />
     <ClInclude Include="headers\states\loading_state.h" />
     <ClInclude Include="headers\states\loading_task.h" />

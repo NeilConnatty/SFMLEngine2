@@ -19,6 +19,15 @@
     <Filter Include="Source Files\states">
       <UniqueIdentifier>{dffa517c-47cc-47bf-a330-f3fa26106d55}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\scene">
+      <UniqueIdentifier>{4399513d-ab04-46c4-aa4b-6d03391091c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene">
+      <UniqueIdentifier>{fb8aadd5-6f88-440e-9b4a-956b873b0a38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\commands">
+      <UniqueIdentifier>{d05d54f0-b757-4b78-a010-794643cf58cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -48,6 +57,15 @@
     <ClCompile Include="src\states\title_state.cpp">
       <Filter>Source Files\states</Filter>
     </ClCompile>
+    <ClCompile Include="src\scene\aircraft.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\world.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\player_impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\application.h">
@@ -76,6 +94,18 @@
     </ClInclude>
     <ClInclude Include="headers\states\title_state.h">
       <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\scene\aircraft.h">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\scene\world.h">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\player_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\commands\action.h">
+      <Filter>Header Files\commands</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

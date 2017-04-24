@@ -10,7 +10,7 @@
 #include <gui/container.h>
 #include <gui/button.h>
 #include <gui/label.h>
-#include <player.h>
+#include <player_impl.h>
 #include "states/state.h"
 
 class settings_state : public state
@@ -24,13 +24,13 @@ public:
 
 private:
     void                update_labels ();
-    void                add_button_label (player::action act, float y, const std::string& text, context cntxt);
+    void                add_button_label (action::ID act, float y, const std::string& text, context cntxt);
 
 private:
     gui::container                                      m_guiContainer;
 
-    std::array<gui::button::ptr, player::ACTION_COUNT>  m_bindingButtons;
-    std::array<gui::label::ptr, player::ACTION_COUNT>   m_bindingLabels;
+    std::array<gui::button::ptr, action::ACTION_COUNT>  m_bindingButtons;
+    std::array<gui::label::ptr, action::ACTION_COUNT>   m_bindingLabels;
 
     sf::Sprite                                          m_backgroundSprite;
 

@@ -155,12 +155,9 @@
     <ClCompile Include="src\gui\component.cpp" />
     <ClCompile Include="src\gui\container.cpp" />
     <ClCompile Include="src\gui\label.cpp" />
-    <ClCompile Include="src\player.cpp" />
-    <ClCompile Include="src\scene\aircraft.cpp" />
     <ClCompile Include="src\scene\entity.cpp" />
     <ClCompile Include="src\scene\scene_node.cpp" />
     <ClCompile Include="src\scene\sprite_node.cpp" />
-    <ClCompile Include="src\scene\world.cpp" />
     <ClCompile Include="src\states\state.cpp" />
     <ClCompile Include="src\states\state_stack.cpp" />
     <ClCompile Include="src\utility.cpp" />
@@ -177,13 +174,10 @@
     <ClInclude Include="headers\engine\resources\fonts.h" />
     <ClInclude Include="headers\engine\resources\resource_holder.h" />
     <ClInclude Include="headers\engine\resources\textures.h" />
-    <ClInclude Include="headers\engine\scene\aircraft.h" />
     <ClInclude Include="headers\engine\scene\category.h" />
     <ClInclude Include="headers\engine\scene\entity.h" />
-    <ClInclude Include="headers\engine\scene\layers.h" />
     <ClInclude Include="headers\engine\scene\scene_node.h" />
     <ClInclude Include="headers\engine\scene\sprite_node.h" />
-    <ClInclude Include="headers\engine\scene\world.h" />
     <ClInclude Include="headers\engine\states\state.h" />
     <ClInclude Include="headers\engine\states\state_stack.h" />
     <ClInclude Include="headers\engine\utility.h" />
